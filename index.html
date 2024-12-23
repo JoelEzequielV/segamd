@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sega MegaDrive/Genesis</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/png" />
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/carrusel.css">
+    <link rel="stylesheet" href="css/modal.css">
+</head>
+<body class="loading">
+
+  <div id="spinner" class="spinner">
+    <img src="img/sonic-spin.gif" alt="cargando...">
+    <p>Cargando...</p>
+  </div>
+
+    <header id="inicio">
+    <!-- Contenedor de la barra de navegación -->
+    <nav class="navbarx menu_open">
+      <div class="menu-icon" id="menuIcon"></div>
+    </nav>
+    <div  class="menu" id="menu">
+      <a class="nav-link active" href="index.html">Inicio</a>
+     <!--  <a class="nav-link" href="#contact">Contacto</a>-->
+      <a class="nav-link" href="shop.html">Tienda</a>
+      <button class="close-menu" id="closeMenu">Cerrar</button>
+    </div>
+    <!-- navegacion -->
+
+    <nav class="navbar bg-dark borde" id="nav">
+        <ul class="navbar-nav" id="navul">
+          <li class="nav-item">
+            <a class="nav-link active" href="#inicio" style="margin: 0.6em 0px;">Inicio</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link fo01" href="shop.html">Tienda</a>
+          </li>
+          <li class="nav-item" style="margin-inline: inherit;margin-top: 1em;">
+        
+          </li>
+        </ul>
+    </nav>
+
+       <!-- logo -->
+      <div class="container">
+        <img src="img/logo1.png" alt="logo" class="img_logo">
+      </div>
+    </header>
+    <br>
+
+    <section id="carrusel" class="seccCarru">
+            <!--Slider-->
+      <div id="slider">  
+        <div class="slide" style="background:dodgerBlue;">
+          <img src="img/carrusel/md1.jpg" >
+        </div>
+        
+        <div class="slide" style="background:coral;">
+          <img src="img/carrusel/md2.jpg" >
+        </div>
+      
+        <div class="slide" style="background:crimson;">
+          <img src="img/carrusel/md3.jpg" >
+        </div>
+        
+        <div class="slide" style="background: #6edf10;">
+          <img src="img/carrusel/md4.jpg" >
+        </div>
+        
+        <!--Controlling arrows-->
+        <span class="controls" onclick="prevSlide(-1)" id="left-arrow"><img src="img/fecha-izquierda.png" alt="izquierda" class="flechasCarru">
+      </span>
+        <span class="controls" id="right-arrow" onclick="nextSlide(1)"><img src="img/fecha-derecha.png" alt="derecha" class="flechasCarru">
+      </span>
+      </div>
+        <div id="dots-con">
+      <span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span>
+      </div>
+    </section>
+
+    <h2 class="font_1" >Presentacion</h2>
+    <section class="container_1 container">
+      <div class="deg">
+      <p>
+        Mega Drive, también conocida como Genesis en diversos territorios de América, es una videoconsola de sobremesa de 16 bits desarrollada por Sega Enterprises, Ltd. Mega Drive fue la tercera consola de Sega y la sucesora de Master System. Compitió principalmente contra Super Nintendo Entertainment System como parte de las videoconsolas de cuarta generación. 
+      </p>
+    </div>
+  </section>
+    <br>
+
+  <!-- HISTORIA -->  
+    <h2 class="font_1 ma_t2" id="historia">Historia</h2>
+
+    <section class="container_1 container">
+      <div class="deg">
+      <p>
+        Sega lanzó Mega Drive en Japón el 29 de octubre de 1988, la consola usaba un procesador Motorola 68000 y un Zilog Z80 como CPU secundaria. Contaba con más de 800 juegos, muchos de ellos en formato cartucho. Mega Drive tuvo periféricos y servicios en línea, y fue bien recibida en América y Europa, aunque no tanto en Japón. Su éxito se debió a juegos como Sonic the Hedgehog y su catálogo de juegos de deportes, además de una campaña de marketing agresiva.
+        <br>
+        La "guerra de consolas" con Super Nintendo atrajo atención pública, especialmente debido a la controversia sobre la violencia en algunos juegos como Mortal Kombat, lo que llevó a Sega a crear un sistema de clasificación de videojuegos. La consola vendió más de 30 millones de unidades y sigue siendo popular entre coleccionistas. Sega lanzó relanzamientos como la Sega Mega Drive Mini en 2019 y Mega Drive Mini 2 en 2022. La Mega Drive fue sucedida por la Sega Saturn en 1994.
+      </p>
+    </div>
+  </section>
+    <br>
+
+  <!-- TOP JUEGOS -->  
+    <h2 class="font_1 ma_b2 ma_t2" id="juegos">TOP Juegos</h2>
+    <!-- cards -->   
+    <section class="container d_f">
+          <div class="card">
+            <a href="#10" style="cursor: pointer;">
+              <img src="img/sonic.png" alt="sonic" class="imgcard">
+            </a>
+          </div>
+          <div class="card">
+            <a href="#20" style="cursor: pointer;">
+              <img src="img/street.png" alt="street" class="imgcard">
+            </a>
+          </div>
+          <div class="card">
+            <a href="#30" style="cursor: pointer;">
+              <img src="img/comic.png" alt="comic" class="imgcard">
+            </a>
+          </div>
+          <div class="card">
+            <a href="#40" style="cursor: pointer;">
+              <img src="img/gg.png" alt="gg" class="imgcard">
+            </a>
+          </div>
+    </section>
+    <br>
+
+      <!-- Sonic Saga -->  
+      <h2 class="font_1 ma_b2 ma_t2" id="sonic_saga">Saga de Sonic</h2>
+      <!-- cards -->   
+      <section class="grid-container">
+            <div class="card-grid" id="id1">
+               <img src="img/sonic.png" alt="sonic" class="imgcard imHv">
+               <button class="open-btn">+Info</button>
+            </div>
+            <div class="card-grid" id="id2">
+              <img src="img/sonic2.png" alt="street" class="imgcard imHv">
+              <button class="open-btn">+Info</button>
+            </div>
+            <div class="card-grid" id="id3">
+              <img src="img/sonic3.png" alt="comic" class="imgcard imHv">
+              <button class="open-btn">+Info</button>
+            </div>
+            <div class="card-grid" id="id4">
+              <img src="img/sonic4.png" alt="gg" class="imgcard imHv">
+              <button class="open-btn">+Info</button>
+            </div>
+            <div class="card-grid" id="id5">
+              <img src="img/sonic5.png" alt="gg" class="imgcard imHv">
+              <button class="open-btn">+Info</button>
+            </div>
+            <div class="card-grid" id="id6">
+              <img src="img/sonic6.png" alt="gg" class="imgcard imHv">
+              <button class="open-btn">+Info</button>
+            </div>
+      </section>
+      <br>
+     
+      <!-- GAMEPLAYS -->  
+      <h2 class="font_1 ma_t2" id="videos">GAMEPLAYS</h2>
+      
+      <section class="container d_f">
+
+        <div class="gameplay deg ma_b" id="10">
+           <iframe class="ytv" width="560" height="315" src="https://www.youtube.com/embed/gjDanVVS5EI?si=6MLrD9o0uoImE7oK" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+           <p>Sonic the Hedgehogc​ es un videojuego de plataformas desarrollado por el Sonic Team y publicado por Sega para la consola doméstica Sega Mega Drive/Genesis en 1991. Salió a la venta en Norteamérica el 23 de junio y en las regiones PAL y Japón al mes siguiente. Los jugadores controlan al personaje homónimo, que puede correr a velocidades casi supersónicas; emprende una búsqueda para derrotar al Dr. Robotnik, un científico que ha encerrado animales en robots y busca las poderosas Chaos Emeralds. El modo de juego consiste en recoger anillos como forma de salud, y un esquema de control sencillo, con saltos y ataques controlados por un solo botón.</p>
+        </div>
+
+        <div class="gameplay deg ma_b" id="20">
+          <iframe class="ytv" width="560" height="315" src="https://www.youtube.com/embed/M9MmF9sbTg8?si=K4-hMNjUb3TNTHef" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          <p>Streets of Rage es una serie de videojuegos de tipo Yo contra el barrio1​ creados para la consola de 16 bits Mega Drive. Originalmente bautizados Bare Knuckle (ベア・ナックル Bea Nakkuru?, trad. "puño desnudo"), la saga está compuesta por tres títulos lanzados entre 1991 y 1994 que cuentan la historia de varios héroes callejeros (policías en el título original), centrándose en Axel Stone, Adam Hunter y Blaze Fielding y su esfuerzo por librarse de una banda mafiosa liderada por el infame Mr. X.</p>
+        </div>
+
+        <div class="gameplay deg ma_b" id="30">
+          <iframe class="ytv" width="560" height="315" src="https://www.youtube.com/embed/OPvUwwoW4Ek?si=WWIF1Byxs861l13N" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          <p>Comix Zone es un videojuego de acción estilo arcade, fue desarrollado por Sega Technical Institute y distribuido por Sega. Fue lanzado en 1995 para PC y Mega Drive, también está disponible para Consola Virtual, Game Boy Advance, Xbox 360 Live Arcade, PlayStation 2 y PlayStation 3.</p>
+        </div>
+
+
+        <div class="gameplay deg ma_b" id="40" >
+          <iframe class="ytv" width="560" height="315" src="https://www.youtube.com/embed/wicAiweX1ew?si=lTk0VqPOqhIVdKKF" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          <p>Ghouls 'n Ghosts, lanzado originalmente en Japón como Daimakaimura (大魔界村 La gran aldea del mundo demoníaco?), es un videojuego de plataformas y run and gun desarrollado por Capcom y fue lanzada como arcade en diciembre de 1988, y fue portado a un número de plataformas. Es una secuela de Ghosts 'n Goblins y es el segundo juego de la serie del mismo nombre.</p>
+        </div>
+
+      </section>
+      <br>
+
+    <!-- formulario de contacto -->  
+    <div class="container_1 container" id="contact">
+      <div class="deg" style="width: 100%;">
+        <form action="" method="post" class="formu" id="contactForm">
+          <h3>Contacto</h3><br>
+          <label for="nombre">Nombre</label>
+          <input type="text" name="nombre" id="nombre">
+          <div id="error-nombre" class="error"></div>
+  
+          <label for="mail">Correo</label>
+          <input type="text" name="mail" id="mail">
+          <div id="error-mail" class="error"></div>
+  
+          <label for="msj">Mensaje</label>
+          <textarea name="msj" id="msj" cols="30" rows="10"></textarea>
+          <div id="error-msj" class="error"></div>
+  
+          <button type="button" id="submitBtn">Enviar</button>
+        </form>
+
+<!--             <form action="" method="post" class="formu">
+              <h3>Contacto</h3><br>
+              <label for="nombre">Nombre</label>
+              <input type="text" name="nombre" id="nombre" >
+              <label for="mail">Correo</label>
+              <input type="text" name="mail" id="mail">
+              <label for="msj">Mensaje</label>
+              <textarea name="msj" id="msj" cols="30" rows="10"></textarea>
+              <button type="button" onclick="alert('Enviado con exito!')">Enviar</button>
+            </form> -->
+
+        </div>
+      </div>
+     <br>
+        <!-- Modals -->
+        <section id="AllModals2">
+
+        </section>
+    <br>
+    <!-- footer -->   
+    <footer class="bg-dark footer b_t">
+      <div class="footer-left">
+      <p><b class="font_1">SEGA</b> © 2024. All Rights Reserved</p>
+    </div>
+      <div class="footer-right">
+        <a href="https://facebook.com" target="_blank" class="icon facebook">F</a>
+        <a href="https://twitter.com" target="_blank" class="icon twitter">T</a>
+        <a href="https://instagram.com" target="_blank" class="icon instagram">I</a>
+      </div>
+    </footer>  
+
+    <script src="js/carrusel.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/modal2.js"></script>
+    <script src="js/spinner.js"></script>
+    <script src="js/form-contact.js"></script>
+    <script>
+      document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+          e.preventDefault();
+          const targetId = this.getAttribute('href').substring(1);
+          const targetElement = document.getElementById(targetId);
+          targetElement.scrollIntoView({
+            behavior: 'smooth', // Desplazamiento suave
+            block: 'center'    // Lleva el elemento al centro de la pantalla
+          });
+        });
+      });
+    </script>
+
+</body>
+</html>

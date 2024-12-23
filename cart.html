@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrito de compras</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/png" />
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/modal.css">
+    <style>
+   .inac1{display: none;}
+   .act1{display: block !important;}
+    </style>
+</head>
+<body class="loading">
+  <!--Spinner de carga -->
+  <div id="spinner" class="spinner">
+    <img src="img/sonic-spin.gif" alt="cargando...">
+    <p>Cargando...</p>
+  </div>
+
+    <header id="inicio">
+    <!-- Contenedor de la barra de navegación -->
+    <nav class="navbarx menu_open">
+      <div class="menu-icon" id="menuIcon"></div>
+    </nav>
+    <div  class="menu" id="menu">
+      <a class="nav-link" href="index.html">Inicio</a>
+      <a class="nav-link" href="shop.html">Tienda</a>
+      <a class="nav-link "  href="cart.html"><span style="color: yellow"></span>Carrito</span></a>
+      <button class="close-menu" id="closeMenu">Cerrar</button>
+    </div>
+    <!-- navegacion -->
+
+    <nav class="navbar bg-dark borde" id="nav">
+        <ul class="navbar-nav" id="navul">
+
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Inicio</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link fo01" href="shop.html">Tienda</a>
+          </li>
+
+          <li class="nav-item" style="max-width: 4em;">
+            <a class="nav-link" style="display: flex;" href="cart.html"><img src="img/carrito.png" alt="carrito" class="iconoCarrito"><span id="itemsNum" style="color: yellow"></span></a>
+          </li>
+
+        </ul>
+    </nav>
+    </header>
+    <br>
+       <!-- logo -->
+       <div class="container" style="margin-top: 5em;">
+        <h1>Termine su compra:</h1>
+      </div>
+      <div class="cartelOferta">OFERTAS: Llevando 3 productos o más 25% de descuento!<br>Llevando 10 productos o más 50% de descuento!</div>
+      <!-- cart -->  
+
+      <br>
+      <section style="width: 70%; margin: auto;" >
+        <h3 id="estaVacio"></h3>
+        <table class="table table-dark" id="listaDeseados">
+            <thead id="tablaIn">
+
+                </thead>
+        </table>
+        <br>
+        <div id="eliminarPedidos">
+        
+        </div>
+        <br>
+      </section>
+      <br>
+      <div id="cardpagarTotal" class="inac1">
+        <div class="cardpagar">
+          <div id="totalPagar"></div>
+          <button onclick="pagarTodo()" id="btnCompra" class="btnAñadir" value="Comprar">Pagar</button>
+          </div>
+     </div>
+      <br>
+      <div id="audioSonic">
+
+      </div>
+       <!-- modal -->   
+       <div class="modal" id="ModalCompra">
+        <div class="modal-content">
+            <span class="close" id="closex">&times;</span>
+            <p>Gracias por su compra!</p>
+            <img src="img/sonic-victory.gif" alt="compra_hecha" >
+            <br>
+        </div>
+    </div>
+    <!-- footer -->   
+    <footer class="bg-dark footer b_t">
+      <div class="footer-left">
+      <p><b class="font_1">SEGA</b> © 2024. All Rights Reserved</p>
+    </div>
+      <div class="footer-right">
+        <a href="https://facebook.com" target="_blank" class="icon facebook">F</a>
+        <a href="https://twitter.com" target="_blank" class="icon twitter">T</a>
+        <a href="https://instagram.com" target="_blank" class="icon instagram">I</a>
+      </div>
+    </footer>  
+    <script src="js/main.js"></script>
+    <script src="js/archivo.js"></script>
+    <script src="js/spinner.js"></script>
+    <script>
+       const btnC = document.getElementById("btnCompra");
+       const modalC = document.getElementById("ModalCompra");
+       const span = document.getElementById('closex');
+       if (btnC) {
+            btnC.addEventListener("click", function () {
+              modalC.style.display = "block"; 
+          });
+        }
+        if (span)  {
+            span.onclick = function() {
+              modalC.style.display = "none";
+
+              localStorage.clear();
+              location.reload();
+            };
+          }
+          window.onclick = function(event) {
+            if (event.target === modalC) {
+              modalC.style.display = "none";
+
+              localStorage.clear();
+              location.reload();
+            }
+          };
+      function pagarTodo(){
+        let audioSonic= document.getElementById('audioSonic');
+        audioSonic.innerHTML += `
+           <audio autoplay >
+            <source src="mas/Sonic1Intro.mp3"  type="audio/mpeg">
+           </audio> `;
+      }
+    </script>
+</body>
+</html>

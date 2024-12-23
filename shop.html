@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mega Tienda</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/png" />
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/modal.css">
+</head>
+<body class="loading">
+   <!--Spinner de carga -->
+  <div id="spinner" class="spinner">
+    <img src="img/sonic-spin.gif" alt="cargando...">
+    <p>Cargando...</p>
+  </div>
+
+    <header id="inicio">
+    <!-- Contenedor de la barra de navegación -->
+    <nav class="navbarx menu_open">
+      <div class="menu-icon" id="menuIcon"></div>
+    </nav>
+    <div  class="menu" id="menu">
+      <a class="nav-link" href="index.html">Inicio</a>
+      <a class="nav-link active" href="shop.html">Tienda</a>
+      <a class="nav-link"  href="cart.html" style="color: yellow">Carrito</a>
+      <button class="close-menu" id="closeMenu">Cerrar</button>
+    </div>
+    <!-- navegacion -->
+
+    <nav class="navbar bg-dark borde" id="nav">
+        <ul class="navbar-nav" id="navul">
+
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Inicio</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link fo01 active" href="shop.html">Tienda</a>
+          </li>
+
+          <li class="nav-item" style="max-width: 4em;">
+            <a class="nav-link" style="display: flex;" href="cart.html"><img src="img/carrito.png" alt="carrito" class="iconoCarrito"><span id="itemsNum" style="color: yellow"></span></a>
+          </li>
+
+        </ul>
+    </nav>
+
+       <!-- logo -->
+      <div class="container">
+        <img src="img/logo-tienda.png" alt="logo" class="img_logo">
+      </div>
+    </header>
+    <br>
+      <div class="cartelDan">La máxima cantidad de productos del mismo tipo es de 10.</div>
+      <div class="cartelOferta">OFERTAS: Llevando 3 productos o más 25% de descuento!<br>Llevando 10 productos o más 50% de descuento!</div>
+      <!-- Productos -->  
+      <h2 class="font_1 ma_t2">Productos</h2>
+      <br>
+
+      <section id="productos">
+      </section>
+      <br>
+      
+      <input id="listaDeseados" hidden>
+      <input id="totalPagar" hidden>
+      <br>
+
+      <!-- Modals -->
+    <section id="AllModals">
+
+    </section>
+ 
+       <!-- modal -->   
+       <div class="modal" id="ModalError">
+        <div class="modal-content">
+            <span class="close" id="closex">&times;</span>
+            <p>Error, este producto ya esta en carrito!</p>
+            <img src="img/err.gif" alt="error" style="width: 8em;">
+            <br>
+        </div>
+    </div>
+    <!-- footer -->   
+    <footer class="bg-dark footer b_t">
+      <div class="footer-left">
+      <p><b class="font_1">SEGA</b> © 2024. All Rights Reserved</p>
+    </div>
+      <div class="footer-right">
+        <a href="https://facebook.com" target="_blank" class="icon facebook">F</a>
+        <a href="https://twitter.com" target="_blank" class="icon twitter">T</a>
+        <a href="https://instagram.com" target="_blank" class="icon instagram">I</a>
+      </div>
+    </footer> 
+
+    <script src="js/main.js"></script> 
+    <script src="js/archivo.js"></script>
+    <script src="js/modal.js"></script>
+    <script src="js/spinner.js"></script>
+    <script>
+      function errorModalE(){
+       const modalE = document.getElementById("ModalError");
+       const span = document.getElementById('closex');   
+
+              modalE.style.display = "block";  
+
+        if (span)  {
+            span.onclick = function() {
+              modalE.style.display = "none";
+            };
+          }
+          window.onclick = function(event) {
+            if (event.target === modalE) {
+              modalE.style.display = "none";
+            }
+          };
+          return;
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,45 @@
+[
+    {
+        "id":1,
+        "name":"Sonic 1",
+        "img":"img/sonic.png",
+        "price": 19.99,
+        "description": "Sonic the Hedgehog es un videojuego de plataformas de desplazamiento lateral en 2D. Se centra en la habilidad del personaje principal para correr a gran velocidad a través de niveles que incluyen muelles, pendientes, pozos sin fondo y bucles verticales.​ Están poblados de robots enemigos, dentro de los cuales el Dr. Robotnik ha atrapado animales; destruir uno libera al animal, pero no es necesario para completar el juego.También debe evitar tocar pinchos, caer en pozos sin fondo, ser aplastado por paredes o plataformas móviles y ahogarse, lo que puede evitarse respirar burbujas de aire de los conductos de ventilación."
+    },
+    {
+        "id":2,
+        "name":"Sonic 2",
+        "img":"img/sonic2.png",
+        "price": 19.99,
+        "description":"Sonic the Hedgehog 2 es un videojuego de plataformas de desplazamiento lateral. Presenta una historia similar a la del primer Sonic the Hedgehog (1991):​ el Doctor Robotnik, un científico loco, busca las Chaos Emeralds para alimentar su estación espacial, el Death Egg,​ y atrapa a los habitantes animales de West Side Island en robots agresivos. Como Sonic the Hedgehog, el jugador se embarca en un viaje para recolectar las Chaos Emeralds y detener a Robotnik."
+    },
+    {
+        "id":3,
+        "name":"Sonic 3",
+        "img":"img/sonic3.png",
+        "price": 19.99,
+        "description": "Sonic 3: En Sonic the hedgehog 2, Sonic destruyó la base del Dr. Robotnik, el Death Egg; ahora sus escombros han caído hacia la Tierra. Y justo en el camino de la base que cae, flota una gigantesca masa con forma de nube. La enorme sombra del Death Egg tapa la nube... imponentes montañas, un inmenso bosque... la nube no es otra que la legendaria isla flotante, suspendida en el cielo."
+    },
+    {
+        "id":4,
+        "name":"Sonic & Knuckles",
+        "img":"img/sonic4.png",
+        "price": 29.99,
+        "description": "Sonic & Knuckles: Es la continuación inmediata de Sonic the Hedgehog 3, La gigantesca fortaleza de Eggman (llamado Dr. Robotnik fuera de Japón antes de Sonic Adventure), el Death Egg, iba a escapar hacia el espacio; pero Sonic hizo que volviera a caer y se estrelló de nuevo contra la isla flotante. Tras escapar de la estación espacial en rumbo de colisión, el erizo cayó en un denso bosque de dicha isla, en el que enormes champiñones crecen exuberantemente."
+    },
+    {
+        "id":5,
+        "name":"Sonic 3D",
+        "img":"img/sonic5.png",
+        "price": 29.99,
+        "description": "Sonic 3D: El juego se juega desde un punto de vista isométrico en un entorno 2D y utiliza sprites 3D pre-renderizados. Sonic debe salvar Flickies (que aparecieron por primera vez en el juego de arcade de Sega de 1984 Flicky) y llevarlos a un Warp Ring para avanzar en una zona. Cada zona consta de dos Actos regulares y un tercer Acto con un jefe. Hay diez o quince Flickies en los Actos regulares de cada zona, salvo los de Panic Puppet Zone, mientras que en el tercer Acto de cada Zona el jugador se enfrenta al Dr. Robotnik en una de sus muchas máquinas."
+    },
+    {
+        "id":6,
+        "name":"Sonic Spinball",
+        "img":"img/sonic6.png",
+        "price": 29.99,
+        "description": "Sonic Spinball: Sonic Spinball es esencialmente la continuación lógica de los niveles con tema de pinball que comenzó con Spring Yard Zone de Sonic the Hedgehog (1991). Este juego cuenta con cuatro mesas de pinball grandes: un nivel de alcantarilla, una estación de energía a base de vapor que funciona con lava, una fábrica de badniks y un sistema de lanzamiento. El jugador debe guiar a Sonic a través de estas cuatro mesas de pinball y recoger todas las Chaos Emeralds escondidas en cada una y combatir una de las creaciones de Robotnik."
+    }
+        
+    ]
