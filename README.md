@@ -1,14 +1,13 @@
-# proyecto para talento tech
-[General Info](#general-info)
+# Proyecto para talento tech
 ### General Info
 ***
 Proyecto de talento tech curso en el que diseño una web nostálgica con temática de Sega Megadrive, una de las consolas de videojuegos más queridas de la historia.
 ***
 Ítems del proyecto realizado:<br /> 
--html y css, diseño responsive, algo de dinamismo js (carrusel, spinner, gif etc)<br /> 
--Javascript:<br /> 
-  -listado de productos de manera dinámica:<br /> 
-    -Utilización de .json externo y traer datos mediante fetch<br /> 
+- html y css, diseño responsive, algo de dinamismo js (carrusel, spinner, gif etc)<br /> 
+- Javascript:<br /> 
+  - listado de productos de manera dinámica:<br /> 
+    - Utilización de .json externo y traer datos mediante fetch<br /> 
     - Botón para ver descripción<br /> 
     - Botón para comprar (añadir al carrito)<br /> 
     - input range para seleccionar cantidad de productos por tipo del 1 al 10<br /> 
